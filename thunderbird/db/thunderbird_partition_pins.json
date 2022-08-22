@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "light_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "light_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "light_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "light_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "left",
+					"strict" : false
+				},
+				{
+					"name" : "right",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

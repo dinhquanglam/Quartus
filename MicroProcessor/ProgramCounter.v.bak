@@ -1,0 +1,26 @@
+module ProgramCounter(clock, clr, PCsource, enable, data, PC);
+	input clock, clr, PCsource;
+	input [3:0] data;
+	output [3:0] PC;
+	
+	reg [3:0] PC;
+	
+	always @(posedge clock) begin 
+		if(clr == 1) begin
+			PC <= 4'b0000;
+		end
+		else begin
+			if(enable == 1) begin
+				if(PCsource) begin
+					PC <= PC + 1 + data;
+				end
+				else begin
+					PC <= PC + 1;
+				end
+			end
+			else begin 
+				PC <= PC;
+			end
+		end
+	end
+endmodule;

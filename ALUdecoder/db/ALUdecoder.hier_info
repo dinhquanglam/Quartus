@@ -1,0 +1,33 @@
+|ALUdecoder
+ALUop => ALUresult.OUTPUTSELECT
+ALUop => ALUresult.OUTPUTSELECT
+ALUop => tmp[0].ACLR
+ALUop => tmp[1].ACLR
+funct_cmd[0] => Decoder0.IN3
+funct_cmd[0] => Mux0.IN17
+funct_cmd[0] => Mux1.IN15
+funct_cmd[0] => Mux2.IN19
+funct_cmd[1] => Decoder0.IN2
+funct_cmd[1] => Mux0.IN16
+funct_cmd[1] => Mux1.IN14
+funct_cmd[1] => Mux2.IN18
+funct_cmd[2] => Decoder0.IN1
+funct_cmd[2] => Mux0.IN15
+funct_cmd[2] => Mux1.IN13
+funct_cmd[2] => Mux2.IN17
+funct_cmd[3] => Decoder0.IN0
+funct_cmd[3] => Mux0.IN14
+funct_cmd[3] => Mux1.IN12
+funct_cmd[3] => Mux2.IN16
+funct_s => Mux1.IN16
+funct_s => Mux0.IN18
+funct_s => Mux1.IN17
+funct_s => Mux0.IN19
+funct_s => Mux1.IN18
+funct_s => Mux1.IN19
+ALUcontrol[0] <= ALUresult.DB_MAX_OUTPUT_PORT_TYPE
+ALUcontrol[1] <= ALUresult.DB_MAX_OUTPUT_PORT_TYPE
+flagW[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+flagW[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

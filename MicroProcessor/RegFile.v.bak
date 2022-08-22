@@ -1,0 +1,19 @@
+module RegFile(clock, rr1, rr2, wr, regW, dataW, read1, read2);
+	input clock;
+	input [2:0] rr1, rr2, wr;
+	input regW;
+	input [15:0]dataW;
+	output [15:0] read1, read2;
+	
+	reg [15:0] read1, read2;
+	reg [15:0] rf[7:0] //3 bits address => array of 8 register.
+	
+	always @ (posedge clock) begin
+		if(regW == 1) begin
+			rf[wr] <= dataW; 
+		end
+		read1 <= rf[rr1];
+		read2 <= rf[rr2];
+	end
+
+endmodule

@@ -1,0 +1,15 @@
+module MicroProcessor_tb();
+	reg clock, clr, PCenable;
+	wire [15:0] ALUresult;
+	
+	MicroProcessor MP(.clock(clock), .clr(clr), .PCenable(PCenable), .ALUresult(ALUresult));
+	initial begin
+	clock = 0;
+	forever #100 clock = ~clock;
+	end
+	
+	initial begin
+		clr = 1;
+		PCenable = 0;
+	end
+endmodule

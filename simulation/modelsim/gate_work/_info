@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Documents/quartus/simulation/modelsim
+vdecoder
+!s110 1636705648
+!i10b 1
+!s100 [Y>MYk]l^iBFLVAzl7ZZ40
+IBUE7Q[:BI9df1JFT9VN:b0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1636705326
+8C:/Users/Admin/Documents/quartus/decoder.v
+FC:/Users/Admin/Documents/quartus/decoder.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1636705648.000000
+!s107 C:/Users/Admin/Documents/quartus/decoder.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Admin/Documents/quartus/decoder.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vdecorder_tb
+!s110 1636705797
+!i10b 1
+!s100 Q=;I51G;BTa2:?`4d^LNL1
+IT:ORB^HQd>AKo^2[=7S0U3
+R1
+R0
+w1636705759
+8C:/Users/Admin/Documents/quartus/decoder_tb.v
+FC:/Users/Admin/Documents/quartus/decoder_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1636705796.000000
+!s107 C:/Users/Admin/Documents/quartus/decoder_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Admin/Documents/quartus/decoder_tb.v|
+!i113 1
+R3
+R4
+vhard_block
+!s110 1636705616
+!i10b 1
+!s100 6iRW7JL91i:lX2B@bei273
+I3ke;mO?MNXIdm6SI5:aMW0
+R1
+R0
+w1636705574
+8decoder.vo
+Fdecoder.vo
+L0 377
+R2
+r1
+!s85 0
+31
+!s108 1636705616.000000
+!s107 decoder.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|decoder.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+R4

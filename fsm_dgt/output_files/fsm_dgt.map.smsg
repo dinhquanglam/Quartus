@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fsm_dgt.v(78): always construct contains both blocking and non-blocking assignments File: C:/Users/Admin/Documents/quartus/fsm_dgt/fsm_dgt.v Line: 78

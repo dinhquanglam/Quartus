@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Admin/Documents/quartus/fulladder.v
+source_file = 1, C:/Users/Admin/Documents/quartus/fulladder_tb.v
+source_file = 1, C:/Users/Admin/Documents/quartus/db/fulladder.cbx.xml
+design_name = fulladder
+instance = comp, sum_aoutput, sum~output, fulladder, 1
+instance = comp, cout_aoutput, cout~output, fulladder, 1
+instance = comp, b_ainput, b~input, fulladder, 1
+instance = comp, a_ainput, a~input, fulladder, 1
+instance = comp, cin_ainput, cin~input, fulladder, 1
+instance = comp, x2_a0, x2~0, fulladder, 1
+instance = comp, o1_a0, o1~0, fulladder, 1
+design_name = hard_block
+instance = comp, a_aALTERA_ASDO_DATA1_a_aibuf, ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_FLASH_nCE_nCSO_a_aibuf, ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_DATA0_a_aibuf, ~ALTERA_DATA0~~ibuf, hard_block, 1

@@ -1,0 +1,217 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/intelFPGA_lite/18.1/MicroProcessor/simulation/modelsim
+vALU
+Z1 !s110 1639975999
+!i10b 1
+!s100 ;jI5@oL@_e]STBi?IjQgk1
+InnCdC1j@7oa[<KGUXHLDo1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639917897
+8F:/intelFPGA_lite/18.1/MicroProcessor/ALU.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/ALU.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1639975999.000000
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/ALU.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+F:/intelFPGA_lite/18.1/MicroProcessor
+Z7 tCvgOpt 0
+n@a@l@u
+vALUcontrolUnit
+Z8 !s110 1639976001
+!i10b 1
+!s100 1PVVFciJlmB1RSQATcV<b1
+IJ>GJI3iJY1Z7Gh4hG1]D_2
+R2
+R0
+w1639823942
+8F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1639976000.000000
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v|
+!i113 1
+R5
+R6
+R7
+n@a@l@ucontrol@unit
+vControlUnit
+Z10 !s110 1639976000
+!i10b 1
+!s100 oW:S<UMf_kI3J5b^XE>f51
+IAPVdmEXQ;lV4AXdZQaQn<1
+R2
+R0
+w1639917878
+8F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v|
+!i113 1
+R5
+R6
+R7
+n@control@unit
+vDataMemory
+R10
+!i10b 1
+!s100 6;j30Z<VQb5L^UN8f`W5O3
+I]Uo@PSm5@6d3PI?nHD4]91
+R2
+R0
+w1639917973
+8F:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v|
+!i113 1
+R5
+R6
+R7
+n@data@memory
+vInstructionMemory
+R10
+!i10b 1
+!s100 N^zlSYlW:55BM;HA?h<j[3
+I@1T97k_;OUFlPn5@5<lo<3
+R2
+R0
+w1639975981
+8F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v|
+!i113 1
+R5
+R6
+R7
+n@instruction@memory
+vMicroProcessor
+R1
+!i10b 1
+!s100 RoJ^c>P]VnbD>2E[ggmB^3
+Ig[6g?i0^ZKS0[cd[o3BQg0
+R2
+R0
+w1639968958
+8F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v|
+!i113 1
+R5
+R6
+R7
+n@micro@processor
+vMicroProcessor_tb
+R8
+!i10b 1
+!s100 o?]O1h^0b0C0IcEc=?gVI2
+IIa>M:TeFH^>3zNg;e^@df1
+R2
+R0
+w1639885793
+8F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor_tb.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1639976001.000000
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor_tb.v|
+!i113 1
+R5
+R6
+R7
+n@micro@processor_tb
+vProgramCounter
+R10
+!i10b 1
+!s100 :2J0@AYU_<JZLQXJ=L6RR0
+IAdTkU6F>gegWRAnQoYc??0
+R2
+R0
+w1639884345
+8F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v|
+!i113 1
+R5
+R6
+R7
+n@program@counter
+vRegFile
+R10
+!i10b 1
+!s100 WGES^nI2<geEWgH0am<lj3
+I2UD>X@Bdj[LIFLRMPB[>e3
+R2
+R0
+w1639917797
+8F:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v
+FF:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/intelFPGA_lite/18.1/MicroProcessor|F:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v|
+!i113 1
+R5
+R6
+R7
+n@reg@file

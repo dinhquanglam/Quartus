@@ -1,0 +1,53 @@
+module ALU(inA, inB, ALUcontrol, ALUresult, isZero);
+	input [15:0] inA, inB;
+	input [3:0] ALUcontrol;
+	output [15:0] ALUresult;
+	output isZero;
+	
+	reg [15:0] ALUresult;
+	reg isZero;
+	always @(*) begin
+		case(ALUcontrol)
+			4'b0000: //addition
+				ALUresult = inA + inB;
+			4'b0001: //subtraction
+				ALUresult = inA - inB;
+			4'b0010: //multiply
+				ALUresult = inA * inB;
+			4'b0011: //division
+				ALUresult = inA / inB;
+			4'b0100: //sll
+				ALUresult = inA << inB;
+			4'b0101: //srl 
+				ALUresult = inA >> inB;
+			4'b0110: //rotate left
+				ALUresult = {inA[(15-inB):0], inA[15:(15-inB+1)]};
+			4'b0111: //rotate right
+				ALUresult = {inA[(inB-1):0], inA[15:inB]};
+			4'b1000: //and
+				ALUresult = inA & inB;
+			4'b1001: //or
+				ALUresult = inA | inB;
+			4'b1010: //xor
+				ALUresult = inA ^ inB;
+			4'b1011: //nor
+				ALUresult = ~(inA | inB);
+			4'b1100: //nand
+				ALUresult = ~(inA & inB);
+			4'b1101: //nxor
+				ALUresult = ~(inA ^ inB);
+			4'b1110: //greater compare
+				ALUresult = (inA > inB)?16'd1:16'd0;
+			4'b1111: //equal compare
+				ALUresult = (inA == inB)?16'd1:16'd0;
+		endcase
+	end
+	always @(*) begin
+		if(ALUresult == 16'd0) begin
+			isZero = 1;
+		end
+		else begin
+			isZero = 0;
+		end
+	end
+endmodule

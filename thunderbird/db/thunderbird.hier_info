@@ -1,0 +1,37 @@
+|thunderbird
+clk => next_light.CLK
+clk => count_reg[0].CLK
+clk => count_reg[1].CLK
+clk => count_reg[2].CLK
+clk => count_reg[3].CLK
+clk => count_reg[4].CLK
+clk => count_reg[5].CLK
+clk => count_reg[6].CLK
+clk => count_reg[7].CLK
+clk => count_reg[8].CLK
+clk => count_reg[9].CLK
+clk => count_reg[10].CLK
+clk => current_state~1.DATAIN
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+left => next_state.OUTPUTSELECT
+left => next_state.OUTPUTSELECT
+left => always1.IN0
+left => Selector1.IN3
+right => always1.IN1
+right => next_state.DATAA
+right => next_state.DATAA
+light_out[0] <= light_out.DB_MAX_OUTPUT_PORT_TYPE
+light_out[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+light_out[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+light_out[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+light_out[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+light_out[5] <= light_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

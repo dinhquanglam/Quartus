@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Documents/quartus/Adventure_game/simulation/modelsim
+vAdventure_Game
+Z1 !s110 1639383544
+!i10b 1
+!s100 PBf3ziEnK7Ll9WFT7]ZmE2
+IAgWZF1KGQG?ER01DJ>^h81
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639383374
+8C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game.v
+FC:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1639383544.000000
+!s107 C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/quartus/Adventure_game|C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Admin/Documents/quartus/Adventure_game
+Z7 tCvgOpt 0
+n@adventure_@game
+vAdventure_Game_Room
+R1
+!i10b 1
+!s100 h:deMbJodITf:lc>z`P[]0
+ID>1=oRfAMhm`AaU4<ZzIY0
+R2
+R0
+w1639383389
+8C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Room.v
+FC:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Room.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Room.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/quartus/Adventure_game|C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Room.v|
+!i113 1
+R5
+R6
+R7
+n@adventure_@game_@room
+vAdventure_Game_Sword
+Z8 !s110 1639383545
+!i10b 1
+!s100 mYd^Pim?S<YW3]VWJZR7Z2
+IUPWDaE94XLE6^niCVbJ?63
+R2
+R0
+w1639383397
+8C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Sword.v
+FC:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Sword.v
+L0 9
+R3
+r1
+!s85 0
+31
+Z9 !s108 1639383545.000000
+!s107 C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Sword.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/quartus/Adventure_game|C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_Sword.v|
+!i113 1
+R5
+R6
+R7
+n@adventure_@game_@sword
+vAdventure_Game_TB
+R8
+!i10b 1
+!s100 a`I`1U2RjFi764;Jle@d^3
+IUb[T>d>4@LkaPnMTIRiED1
+R2
+R0
+w1639383407
+8C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_TB.v
+FC:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_TB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/quartus/Adventure_game|C:/Users/Admin/Documents/quartus/Adventure_game/Adventure_Game_TB.v|
+!i113 1
+R5
+R6
+R7
+n@adventure_@game_@t@b

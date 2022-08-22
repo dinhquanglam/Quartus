@@ -1,0 +1,206 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
+
+// DATE "11/12/2021 09:56:44"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module fulladder (
+	a,
+	b,
+	cin,
+	sum,
+	cout);
+input 	a;
+input 	b;
+input 	cin;
+output 	sum;
+output 	cout;
+
+// Design Ports Information
+// sum	=>  Location: PIN_V2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// cout	=>  Location: PIN_V1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a	=>  Location: PIN_V3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b	=>  Location: PIN_V4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// cin	=>  Location: PIN_U2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire sum_aoutput_o;
+wire cout_aoutput_o;
+wire b_ainput_o;
+wire a_ainput_o;
+wire cin_ainput_o;
+wire x2_a0_combout;
+wire o1_a0_combout;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X0_Y28_N16
+cycloneive_io_obuf sum_aoutput(
+	.i(x2_a0_combout),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(sum_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam sum_aoutput.bus_hold = "false";
+defparam sum_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y28_N23
+cycloneive_io_obuf cout_aoutput(
+	.i(o1_a0_combout),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(cout_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam cout_aoutput.bus_hold = "false";
+defparam cout_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y29_N15
+cycloneive_io_ibuf b_ainput(
+	.i(b),
+	.ibar(gnd),
+	.o(b_ainput_o));
+// synopsys translate_off
+defparam b_ainput.bus_hold = "false";
+defparam b_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y29_N22
+cycloneive_io_ibuf a_ainput(
+	.i(a),
+	.ibar(gnd),
+	.o(a_ainput_o));
+// synopsys translate_off
+defparam a_ainput.bus_hold = "false";
+defparam a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y30_N1
+cycloneive_io_ibuf cin_ainput(
+	.i(cin),
+	.ibar(gnd),
+	.o(cin_ainput_o));
+// synopsys translate_off
+defparam cin_ainput.bus_hold = "false";
+defparam cin_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y29_N16
+cycloneive_lcell_comb x2_a0(
+// Equation(s):
+// x2_a0_combout = b_ainput_o $ (a_ainput_o $ (cin_ainput_o))
+
+	.dataa(b_ainput_o),
+	.datab(a_ainput_o),
+	.datac(gnd),
+	.datad(cin_ainput_o),
+	.cin(gnd),
+	.combout(x2_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam x2_a0.lut_mask = 16'h9966;
+defparam x2_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y29_N18
+cycloneive_lcell_comb o1_a0(
+// Equation(s):
+// o1_a0_combout = (b_ainput_o & ((a_ainput_o) # (cin_ainput_o))) # (!b_ainput_o & (a_ainput_o & cin_ainput_o))
+
+	.dataa(b_ainput_o),
+	.datab(a_ainput_o),
+	.datac(gnd),
+	.datad(cin_ainput_o),
+	.cin(gnd),
+	.combout(o1_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam o1_a0.lut_mask = 16'hEE88;
+defparam o1_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign sum = sum_aoutput_o;
+
+assign cout = cout_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+
+endmodule

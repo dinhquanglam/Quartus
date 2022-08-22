@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "light_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "light_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "light_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "light_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "traffic_A",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "traffic_B",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

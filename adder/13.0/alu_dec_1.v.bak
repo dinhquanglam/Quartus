@@ -1,0 +1,53 @@
+module alu_dec_1
+	(
+	input ALUOp, 
+	input	[4:1] Funct_cmd, 
+	input	Funct_s, // Select
+	output [1:0] ALUControl,
+	output [1:0] FlagW 
+	);
+	reg [1:0] ALUResult;
+	wire [1:0] tmp;
+	assign ALuControl = ALUResult;
+	always @( ALUOp or Funct_cmd or Funct_s )
+	begin	
+		case ( Funct_cmd )
+		//
+		4'b0100 :
+			ALUResult = 00;
+			if ( Funct_s == 0 )
+			tmp = 00;
+			else 
+			tmp = 11;
+			end if;
+		//
+		4'b0010 :
+			ALUResult = 01;
+			if ( Funct_s == 0 )
+			tmp = 00;
+			else 
+			tmp = 11;
+			end if;
+		//
+		4'b0000 :
+			ALUResult = 10;
+			if ( Funct_s == 0 )
+			tmp = 00;
+			else 
+			tmp = 10;
+			end if;
+		//
+		4'b1100 :
+			ALUResult = 11;
+			if ( Funct_s == 0 )
+			tmp = 00;
+			else 
+			tmp = 10;
+			end if;
+		//
+		default :
+			ALUResult = 00;
+		end case
+	end
+end module
+		

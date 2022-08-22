@@ -1,0 +1,28 @@
+module fulladder_tb;
+	reg a,b,cin;
+	wire s,cout;
+	
+fulladder FA(.a(a_tb), .b(b_tb), .cin(cin_tb), .s(s_tb), .cout(cout_tb));
+
+initial begin
+	a=0; b=0 ; cin=0;
+	#100;
+	a=0; b=0 ; cin=1;
+	#100;
+	a=0; b=1 ; cin=0;
+	#100;
+	a=0; b=1 ; cin=1;
+	#100;
+	a=1; b=0 ; cin=0;
+	#100;
+	a=1; b=0 ; cin=1;
+	#100;
+	a=1; b=1 ; cin=0;
+	#100;
+	a=1; b=1 ; cin=1;
+	#100;
+	end
+endmodule
+
+	
+ 

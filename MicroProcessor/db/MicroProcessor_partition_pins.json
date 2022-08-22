@@ -1,0 +1,381 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ALUresult[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUresult[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[12]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inst[15]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "rdata2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[10]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[11]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[12]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[14]",
+					"strict" : false
+				},
+				{
+					"name" : "memToRegData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dataMemRead[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clockPC",
+					"strict" : false
+				},
+				{
+					"name" : "clr",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

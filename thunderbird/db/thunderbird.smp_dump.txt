@@ -1,0 +1,11 @@
+
+State Machine - |thunderbird|current_state
+Name current_state.111 current_state.R3 current_state.R2 current_state.R1 current_state.L3 current_state.L2 current_state.L1 current_state.000 
+current_state.000 0 0 0 0 0 0 0 0 
+current_state.L1 0 0 0 0 0 0 1 1 
+current_state.L2 0 0 0 0 0 1 0 1 
+current_state.L3 0 0 0 0 1 0 0 1 
+current_state.R1 0 0 0 1 0 0 0 1 
+current_state.R2 0 0 1 0 0 0 0 1 
+current_state.R3 0 1 0 0 0 0 0 1 
+current_state.111 1 0 0 0 0 0 0 1 

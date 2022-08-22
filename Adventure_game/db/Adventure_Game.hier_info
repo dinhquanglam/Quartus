@@ -1,0 +1,75 @@
+|Adventure_Game
+clk => clk.IN2
+reset => reset.IN2
+start => start.IN2
+direction[0] => direction[0].IN1
+direction[1] => direction[1].IN1
+room[0] <= room[0].DB_MAX_OUTPUT_PORT_TYPE
+room[1] <= room[1].DB_MAX_OUTPUT_PORT_TYPE
+room[2] <= room[2].DB_MAX_OUTPUT_PORT_TYPE
+sword <= sword.DB_MAX_OUTPUT_PORT_TYPE
+result <= Adventure_Game_Room:A0.result
+
+
+|Adventure_Game|Adventure_Game_Room:A0
+clk => count_reg[0].CLK
+clk => count_reg[1].CLK
+clk => count_reg[2].CLK
+clk => count_reg[3].CLK
+clk => count_reg[4].CLK
+clk => count_reg[5].CLK
+clk => count_reg[6].CLK
+clk => count_reg[7].CLK
+clk => count_reg[8].CLK
+clk => count_reg[9].CLK
+clk => count_reg[10].CLK
+clk => change_state.CLK
+clk => count_state[0].CLK
+clk => count_state[1].CLK
+clk => count_state[2].CLK
+clk => count_state[3].CLK
+clk => count_state[4].CLK
+clk => count_state[5].CLK
+clk => count_state[6].CLK
+clk => count_state[7].CLK
+clk => count_state[8].CLK
+clk => count_state[9].CLK
+clk => count_state[10].CLK
+clk => current_state~1.DATAIN
+reset => Selector12.IN5
+reset => Selector12.IN6
+reset => Selector0.IN2
+reset => Selector2.IN1
+start => current_state.OUTPUTSELECT
+start => current_state.OUTPUTSELECT
+start => current_state.OUTPUTSELECT
+start => current_state.OUTPUTSELECT
+start => current_state.OUTPUTSELECT
+start => current_state.OUTPUTSELECT
+start => current_state.OUTPUTSELECT
+direction[0] => Equal0.IN1
+direction[0] => Equal1.IN1
+direction[0] => Equal2.IN1
+direction[0] => Equal3.IN0
+direction[1] => Equal0.IN0
+direction[1] => Equal1.IN0
+direction[1] => Equal2.IN0
+direction[1] => Equal3.IN1
+sword_state_r => always1.IN1
+sword_state_r => next_state.WIN.IN1
+room_locate[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+room_locate[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+room_locate[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+result <= Equal6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adventure_Game|Adventure_Game_Sword:A1
+clk => sword_state~reg0.CLK
+reset => sword_state.OUTPUTSELECT
+start => sword_state.OUTPUTSELECT
+room_locate_r[0] => Equal0.IN1
+room_locate_r[1] => Equal0.IN0
+room_locate_r[2] => Equal0.IN2
+sword_state <= sword_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

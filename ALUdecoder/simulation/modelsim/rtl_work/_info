@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Documents/quartus/ALUdecoder/simulation/modelsim
+vALUdecoder
+Z1 !s110 1638779208
+!i10b 1
+!s100 naKBG=Xd:^0l`RCK[Fmll2
+IFRc6]Hgc4BB:5<F3A4V2^0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1638779179
+8C:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder.v
+FC:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder.v
+L0 5
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1638779208.000000
+!s107 C:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/quartus/ALUdecoder|C:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Admin/Documents/quartus/ALUdecoder
+Z7 tCvgOpt 0
+n@a@l@udecoder
+vALUdecoder_tb
+R1
+!i10b 1
+!s100 Umd1k3aK0^MF5[TRRGakG2
+I3DY@B]==AU:6ahXl?XB=b0
+R2
+R0
+w1638720475
+8C:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder_tb.v
+FC:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/quartus/ALUdecoder|C:/Users/Admin/Documents/quartus/ALUdecoder/ALUdecoder_tb.v|
+!i113 1
+R5
+R6
+R7
+n@a@l@udecoder_tb

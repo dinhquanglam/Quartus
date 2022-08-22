@@ -1,0 +1,533 @@
+Analysis & Synthesis report for MicroProcessor
+Mon Dec 20 09:56:44 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 20 09:56:44 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; MicroProcessor                              ;
+; Top-level Entity Name              ; MicroProcessor                              ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 609                                         ;
+;     Total combinational functions  ; 354                                         ;
+;     Dedicated logic registers      ; 304                                         ;
+; Total registers                    ; 304                                         ;
+; Total pins                         ; 115                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29I8L     ;                    ;
+; Top-level entity name                                            ; MicroProcessor     ; MicroProcessor     ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; MicroProcessor.v                 ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v    ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/ALU.v               ;         ;
+; RegFile.v                        ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v           ;         ;
+; ProgramCounter.v                 ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v    ;         ;
+; InstructionMemory.v              ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v ;         ;
+; DataMemory.v                     ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v        ;         ;
+; ControlUnit.v                    ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v       ;         ;
+; ALUcontrolUnit.v                 ; yes             ; User Verilog HDL File  ; F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v    ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 609         ;
+;                                             ;             ;
+; Total combinational functions               ; 354         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 216         ;
+;     -- 3 input functions                    ; 69          ;
+;     -- <=2 input functions                  ; 69          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 308         ;
+;     -- arithmetic mode                      ; 46          ;
+;                                             ;             ;
+; Total registers                             ; 304         ;
+;     -- Dedicated logic registers            ; 304         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 115         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 288         ;
+; Total fan-out                               ; 2344        ;
+; Average fan-out                             ; 2.64        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------------+--------------+
+; |MicroProcessor            ; 354 (41)            ; 304 (0)                   ; 0           ; 0            ; 0       ; 0         ; 115  ; 0            ; |MicroProcessor                      ; MicroProcessor    ; work         ;
+;    |ALU:AL|                ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MicroProcessor|ALU:AL               ; ALU               ; work         ;
+;    |ALUcontrolUnit:ACU|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MicroProcessor|ALUcontrolUnit:ACU   ; ALUcontrolUnit    ; work         ;
+;    |DataMemory:DM|         ; 208 (208)           ; 256 (256)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MicroProcessor|DataMemory:DM        ; DataMemory        ; work         ;
+;    |InstructionMemory:IM|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MicroProcessor|InstructionMemory:IM ; InstructionMemory ; work         ;
+;    |ProgramCounter:PrC|    ; 36 (36)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MicroProcessor|ProgramCounter:PrC   ; ProgramCounter    ; work         ;
+;    |RegFile:RF|            ; 19 (19)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MicroProcessor|RegFile:RF           ; RegFile           ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; RegFile:RF|rf~16                       ; Lost fanout                            ;
+; RegFile:RF|rf~17                       ; Lost fanout                            ;
+; RegFile:RF|rf~18                       ; Lost fanout                            ;
+; RegFile:RF|rf~19                       ; Lost fanout                            ;
+; RegFile:RF|rf~20                       ; Lost fanout                            ;
+; RegFile:RF|rf~21                       ; Lost fanout                            ;
+; RegFile:RF|rf~22                       ; Lost fanout                            ;
+; RegFile:RF|rf~23                       ; Lost fanout                            ;
+; RegFile:RF|rf~24                       ; Lost fanout                            ;
+; RegFile:RF|rf~25                       ; Lost fanout                            ;
+; RegFile:RF|rf~26                       ; Lost fanout                            ;
+; RegFile:RF|rf~27                       ; Lost fanout                            ;
+; RegFile:RF|rf~28                       ; Lost fanout                            ;
+; RegFile:RF|rf~29                       ; Lost fanout                            ;
+; RegFile:RF|rf~30                       ; Lost fanout                            ;
+; RegFile:RF|rf~31                       ; Lost fanout                            ;
+; RegFile:RF|rf~48                       ; Lost fanout                            ;
+; RegFile:RF|rf~49                       ; Lost fanout                            ;
+; RegFile:RF|rf~50                       ; Lost fanout                            ;
+; RegFile:RF|rf~51                       ; Lost fanout                            ;
+; RegFile:RF|rf~52                       ; Lost fanout                            ;
+; RegFile:RF|rf~53                       ; Lost fanout                            ;
+; RegFile:RF|rf~54                       ; Lost fanout                            ;
+; RegFile:RF|rf~55                       ; Lost fanout                            ;
+; RegFile:RF|rf~56                       ; Lost fanout                            ;
+; RegFile:RF|rf~57                       ; Lost fanout                            ;
+; RegFile:RF|rf~58                       ; Lost fanout                            ;
+; RegFile:RF|rf~59                       ; Lost fanout                            ;
+; RegFile:RF|rf~60                       ; Lost fanout                            ;
+; RegFile:RF|rf~61                       ; Lost fanout                            ;
+; RegFile:RF|rf~62                       ; Lost fanout                            ;
+; RegFile:RF|rf~63                       ; Lost fanout                            ;
+; RegFile:RF|rf~74                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~90                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~106                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~122                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~75                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~91                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~107                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~123                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~72                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~88                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~104                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~120                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~73                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~89                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~105                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~121                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~76                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~92                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~108                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~124                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~77                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~93                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~109                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~125                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~78                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~94                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~110                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~126                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~79                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~95                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~111                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~127                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~66                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~82                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~98                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~114                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~67                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~83                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~99                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~115                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~70                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~86                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~102                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~118                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~71                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~87                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~103                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~119                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~68                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~84                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~100                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~116                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~69                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~85                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~101                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~117                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~64                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~80                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~96                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~112                      ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~65                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~81                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~97                       ; Stuck at GND due to stuck port data_in ;
+; RegFile:RF|rf~113                      ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 96 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 304   ;
+; Number of registers using Synchronous Clear  ; 13    ;
+; Number of registers using Synchronous Load   ; 12    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 288   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |MicroProcessor|ProgramCounter:PrC|PC[1] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |MicroProcessor|ALU:AL|Mux6              ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |MicroProcessor|ALU:AL|Mux9              ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |MicroProcessor|ALU:AL|Mux13             ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |MicroProcessor|ALU:AL|Mux3              ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |MicroProcessor|ALU:AL|Mux0              ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |MicroProcessor|ALU:AL|Mux15             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 115                         ;
+; cycloneiii_ff         ; 304                         ;
+;     ENA               ; 288                         ;
+;     SCLR              ; 1                           ;
+;     SCLR SLD          ; 12                          ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 358                         ;
+;     arith             ; 46                          ;
+;         2 data inputs ; 28                          ;
+;         3 data inputs ; 18                          ;
+;     normal            ; 312                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 51                          ;
+;         4 data inputs ; 216                         ;
+;                       ;                             ;
+; Max LUT depth         ; 11.30                       ;
+; Average LUT depth     ; 6.74                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Dec 20 09:56:04 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MicroProcessor -c MicroProcessor
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file microprocessor.v
+    Info (12023): Found entity 1: MicroProcessor File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU File: F:/intelFPGA_lite/18.1/MicroProcessor/ALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
+    Info (12023): Found entity 1: RegFile File: F:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file programcounter.v
+    Info (12023): Found entity 1: ProgramCounter File: F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
+    Info (12023): Found entity 1: InstructionMemory File: F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
+    Info (12023): Found entity 1: DataMemory File: F:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controlunit.v
+    Info (12023): Found entity 1: ControlUnit File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alucontrolunit.v
+    Info (12023): Found entity 1: ALUcontrolUnit File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file microprocessor_tb.v
+    Info (12023): Found entity 1: MicroProcessor_tb File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor_tb.v Line: 1
+Info (12127): Elaborating entity "MicroProcessor" for the top level hierarchy
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PrC" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 20
+Warning (10230): Verilog HDL assignment warning at ProgramCounter.v(14): truncated value with size 32 to match size of target (16) File: F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v Line: 14
+Warning (10230): Verilog HDL assignment warning at ProgramCounter.v(17): truncated value with size 32 to match size of target (16) File: F:/intelFPGA_lite/18.1/MicroProcessor/ProgramCounter.v Line: 17
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IM" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 22
+Warning (10030): Net "instructionSet.data_a" at InstructionMemory.v(7) has no driver or initial value, using a default initial value '0' File: F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v Line: 7
+Warning (10030): Net "instructionSet.waddr_a" at InstructionMemory.v(7) has no driver or initial value, using a default initial value '0' File: F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v Line: 7
+Warning (10030): Net "instructionSet.we_a" at InstructionMemory.v(7) has no driver or initial value, using a default initial value '0' File: F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v Line: 7
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:CU" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 26
+Warning (10270): Verilog HDL Case Statement warning at ControlUnit.v(7): incomplete case statement has no default case item File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "ALUop", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "regDest", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "regW", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "ALUsrc", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "memread", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "memwrite", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "memToReg", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "bne", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "beq", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at ControlUnit.v(7): inferring latch(es) for variable "jump", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "jump" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "beq" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "bne" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "memToReg" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "memwrite" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "memread" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "ALUsrc" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "regW" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "regDest" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "ALUop[0]" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (10041): Inferred latch for "ALUop[1]" at ControlUnit.v(7) File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:RF" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 32
+Info (12128): Elaborating entity "ALUcontrolUnit" for hierarchy "ALUcontrolUnit:ACU" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 37
+Warning (10270): Verilog HDL Case Statement warning at ALUcontrolUnit.v(10): incomplete case statement has no default case item File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 10
+Warning (10240): Verilog HDL Always Construct warning at ALUcontrolUnit.v(9): inferring latch(es) for variable "ALUcontrol", which holds its previous value in one or more paths through the always construct File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Info (10041): Inferred latch for "ALUcontrol[0]" at ALUcontrolUnit.v(9) File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Info (10041): Inferred latch for "ALUcontrol[1]" at ALUcontrolUnit.v(9) File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Info (10041): Inferred latch for "ALUcontrol[2]" at ALUcontrolUnit.v(9) File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:AL" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 39
+Warning (10230): Verilog HDL assignment warning at ALU.v(30): truncated value with size 32 to match size of target (1) File: F:/intelFPGA_lite/18.1/MicroProcessor/ALU.v Line: 30
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DM" File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 43
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276004): RAM logic "RegFile:RF|rf" is uninferred due to inappropriate RAM size File: F:/intelFPGA_lite/18.1/MicroProcessor/RegFile.v Line: 9
+    Info (276004): RAM logic "InstructionMemory:IM|instructionSet" is uninferred due to inappropriate RAM size File: F:/intelFPGA_lite/18.1/MicroProcessor/InstructionMemory.v Line: 7
+    Info (276007): RAM logic "DataMemory:DM|dataMem" is uninferred due to asynchronous read logic File: F:/intelFPGA_lite/18.1/MicroProcessor/DataMemory.v Line: 8
+Warning (14026): LATCH primitive "ControlUnit:CU|ALUsrc" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|memread" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|memToReg" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|ALUop[1]" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (14026): LATCH primitive "ControlUnit:CU|ALUop[0]" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 7
+Warning (14026): LATCH primitive "ControlUnit:CU|regW" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|regDest" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|bne" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|beq" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ControlUnit:CU|memwrite" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ControlUnit.v Line: 4
+Warning (14026): LATCH primitive "ALUcontrolUnit:ACU|ALUcontrol[1]" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Warning (14026): LATCH primitive "ALUcontrolUnit:ACU|ALUcontrol[0]" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Warning (14026): LATCH primitive "ALUcontrolUnit:ACU|ALUcontrol[2]" is permanently enabled File: F:/intelFPGA_lite/18.1/MicroProcessor/ALUcontrolUnit.v Line: 9
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "inst[2]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[3]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[4]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[5]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[6]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[8]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[11]" is stuck at VCC File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "inst[14]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[2]" is stuck at VCC File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[3]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[4]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[5]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[6]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[7]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[8]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[9]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[10]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[11]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[12]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[13]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[14]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+    Warning (13410): Pin "rdata1[15]" is stuck at GND File: F:/intelFPGA_lite/18.1/MicroProcessor/MicroProcessor.v Line: 3
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 32 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file F:/intelFPGA_lite/18.1/MicroProcessor/output_files/MicroProcessor.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 756 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 112 output pins
+    Info (21061): Implemented 641 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 4783 megabytes
+    Info: Processing ended: Mon Dec 20 09:56:44 2021
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:01:04
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in F:/intelFPGA_lite/18.1/MicroProcessor/output_files/MicroProcessor.map.smsg.
+
+

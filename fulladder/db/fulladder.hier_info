@@ -1,0 +1,11 @@
+|fulladder
+cin => x2.IN1
+cin => a1.IN1
+a => x1.IN0
+a => a2.IN0
+b => x1.IN1
+b => a2.IN1
+s << x2.DB_MAX_OUTPUT_PORT_TYPE
+cout << o1.DB_MAX_OUTPUT_PORT_TYPE
+
+

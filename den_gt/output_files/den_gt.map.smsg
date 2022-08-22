@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at den_gt.v(43): always construct contains both blocking and non-blocking assignments File: C:/Users/Admin/Documents/quartus/den_gt/den_gt.v Line: 43
+Warning (10268): Verilog HDL information at den_gt.v(91): always construct contains both blocking and non-blocking assignments File: C:/Users/Admin/Documents/quartus/den_gt/den_gt.v Line: 91

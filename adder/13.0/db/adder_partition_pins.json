@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ALUControl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FlagW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FlagW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp",
+					"strict" : false
+				},
+				{
+					"name" : "Funct_cmd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Funct_cmd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Funct_cmd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Funct_cmd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Funct_s",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
